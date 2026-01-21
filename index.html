@@ -899,6 +899,43 @@
                         <div class="prompt-content">役所から以下の補正指示を受けました。これに対応するために、どのような追加資料や説明書（理由書）を準備すべきか、複数の選択肢を提案してください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
+
+                    <!-- 追加分：ChatGPT -->
+                    <div class="prompt-item">
+                        <div class="prompt-label">申請受任の可否判断メモ</div>
+                        <div class="prompt-content">以下の案件について、行政書士として受任可能かどうかを「業務範囲」「リスク」「必要資料」「見積難易度」の4点で整理してください。
+
+【案件概要】</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">初回相談後のお礼メール</div>
+                        <div class="prompt-content">本日の相談に対するお礼メール文を作成してください。信頼感が伝わるよう丁寧に、次のステップ（見積提示 or 資料提出）を自然に入れてください。
+
+【相談内容の要点】</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">理由書のたたき台</div>
+                        <div class="prompt-content">以下の事情をもとに、役所提出用の理由書（補足説明書）のたたき台を作成してください。事実→背景→やむを得ない理由→結論の流れで構成してください。
+
+【事情】</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">申請却下リスクの説明文</div>
+                        <div class="prompt-content">以下のリスク要因について、依頼者向けに「なぜ通らない可能性があるか」「今できる対策」をやさしく説明する文章を作成してください。
+
+【リスク内容】</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">業務フローの文章化</div>
+                        <div class="prompt-content">以下の業務内容を、依頼者に説明するためのシンプルな業務フロー文章にしてください。
+
+【業務内容】</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
                 </div>
             </details>
 
@@ -940,6 +977,37 @@
                         <div class="prompt-content">○○の不許可処分に対する審査請求において、裁決で処分が取り消された（認容された）事例があるか調査し、その判断のポイントを教えてください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
+
+                    <!-- 追加分：Gemini -->
+                    <div class="prompt-item">
+                        <div class="prompt-label">許認可ごとの要件比較</div>
+                        <div class="prompt-content">以下の2つの許認可について、要件、必要書類、審査期間、難易度を表形式で比較してください。
+
+【比較対象】
+・許認可A：
+・許認可B：</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">自治体ごとの運用差調査</div>
+                        <div class="prompt-content">○○市と○○市で、同じ許認可申請に運用上の違いがあるか調査し、注意点をまとめてください。出典も可能な範囲で付けてください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">法改正の影響整理</div>
+                        <div class="prompt-content">直近の法改正について、行政書士業務（申請・届出）への影響と、実務で変わる点を整理してください。出典も付けてください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">新業務ネタの市場調査</div>
+                        <div class="prompt-content">行政書士が新しく参入できそうな業務分野（例：ドローン、補助金、外国人雇用）について、市場ニーズ、競合状況、収益性の目安を整理してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">審査基準の探し方ガイド</div>
+                        <div class="prompt-content">○○申請における審査基準・要領・手引きの公式情報の探し方をステップ形式で教えてください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
                 </div>
             </details>
 
@@ -979,6 +1047,33 @@
                     <div class="prompt-item">
                         <div class="prompt-label">理由書の構成案出し</div>
                         <div class="prompt-content">資料にある事情（違反の経緯や反省点）をもとに、入管に提出する「理由書」の構成案を作成してください。人道的な配慮を求めるポイントを強調してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+
+                    <!-- 追加分：NotebookLM -->
+                    <div class="prompt-item">
+                        <div class="prompt-label">申請書チェックリスト生成</div>
+                        <div class="prompt-content">アップした申請書類一式をもとに、提出前チェックリストを作成してください。形式ミス、添付漏れ、整合性の観点でチェック項目を洗い出してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">補正履歴のパターン化</div>
+                        <div class="prompt-content">これまでの補正事例資料から、よくある補正理由と対策をパターン別に整理してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">面談議事録のタスク抽出</div>
+                        <div class="prompt-content">この議事録を読み込み、申請作業に必要なタスクを「タスク」「期限」「依頼者対応」「役所対応」に分けて整理してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">過去案件の再利用メモ</div>
+                        <div class="prompt-content">この案件資料から、次回以降も使えそうな定型文・説明フレーズを抽出してください。</div>
+                        <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
+                    </div>
+                    <div class="prompt-item">
+                        <div class="prompt-label">顧問契約向け業務棚卸し</div>
+                        <div class="prompt-content">この資料をもとに、顧問契約に含められる継続業務メニュー案を整理してください。</div>
                         <button class="prompt-copy-btn" onclick="app.copyText(this)">コピー</button>
                     </div>
                 </div>
